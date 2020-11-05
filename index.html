@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Gryn-X Foods Survey Form </h1>
+    <p id="description">
+        <i>Thank you for taking the time to help us improve our services and products</i>
+    </p>
+    <form id="survey-form">
+     <div class="form-control">
+         <div class="form-control">
+             <label for="name" id="name-label">Name</label>
+             <input type="text" id="name" placeholder="Enter your Name" required/>
+         </div>
+
+         <div class="form-control">
+             <label for="email" id="email-label">Email</label>
+             <input type="email" id="email" placeholder="Enter your Email" required />
+         </div>
+
+         <div class="form-control">
+             <label for="number" id="number-label">Age</label>
+             <input type="number" id="number" placeholder="Enter your Age" required min="0" max="130"/>
+         </div>
+
+         <div class="form-control">
+            <label for="diet" id="label-diet">Which option best describes your current diet?
+            </label>
+            <select name="diet" id="dropdown">
+                <option value="" disabled selected>Select your option</option>
+                <option value="omnivore">Omnivore</option>
+                <option value="carnivore">Carnivore</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="other">Other</option>
+            </select>
+         </div>
+         <div class="form-control">
+            <label >Would you recommend Gryn-X to a friend?</label>
+            
+            <label for="recommend"><input type="radio" id="recommend-1" name="recommend"value="definitely"/>Definitely</label>
+
+            <label for="recommend"><input type="radio" id="recommend-2" name="recommend"value="maybe">Maybe</label>
+            
+            <label for="recommend"><input type="radio" id="recommend-3" name="recommend"value="not-sure">Not sure</label>
+            
+            <label for="recommend" ><input type="radio" id="recommend-4" name="recommend"value="absolutely-not">Absolutely not</label>
+        </div>
+
+            <div class="form-control">
+
+                <label for="role" id="label-role">Through which serivces do you buy our products?
+                </label>
+    
+                <select name="service" id="service">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="omnivore">Gryn-X Official Site</option>
+                    <option value="carnivore">Supermarkets</option>
+                    <option value="vegetarian">Gryn-X Farm</option>
+                    <option value="other">Other</option>
+                </select>
+             </div>
+
+            
+            <div class="form-control">
+            <label>What products do you like the most?<small> (Check all that apply)</small></label>
+        </div>
+            <div class="form-control">
+            <label for="favorite-1" ><input type="checkbox" name = favorite id="favorite-1" value="favorite-1"> Lettuce</label>
+            <label for="favorite-2" ><input type="checkbox" name = favorite id="favorite-2" value="favorite-2"> Romaine Lettuce</label>
+            <label for="favorite-3" ><input type="checkbox" name = favorite id="favorite-3" value="favorite-3"> Spinach</label>
+            <label for="favorite-4" ><input type="checkbox" name = favorite id="favorite-4" value="favorite-4"> Broccoli Sprouts</label>
+            <label for="favorite-5" ><input type="checkbox" name = favorite id="favorite-5" value="favorite-5"> Kale</label>
+            <label for="favorite-6" ><input type="checkbox" name = favorite id="favorite-6" value="favorite-6"> MicroGryn-X Mix</label>
+            <label for="favorite-7" ><input type="checkbox" name = favorite id="favorite-7" value="favorite-7"> Strawberries</label>
+        </div>
+
+        <div class="form-control">
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" placeholder="Enter your comments and suggestions here"/></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+     </div>
+    </form>
+
+
+
+
+</body>
+</html>
